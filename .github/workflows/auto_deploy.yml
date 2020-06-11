@@ -30,8 +30,6 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: Installing surge
-      run: |npm install --global surge
+      run:  npm install --global surge
     - name: deploying using surge
       run: surge ./ developerhussnain.github.io/Bootcamp2020.surge.sh --token ${{ secrets.SECURITY }}
-        echo Add other actions to build,
-        echo test, and deploy your project.
